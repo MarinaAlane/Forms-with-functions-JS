@@ -4,57 +4,54 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title> Forms With Functions</title>
 </head>
 <body>
   <h1> Playground Functions</h1>
   <span> Preencha os campos e veja a mágica das funções acontecer!</span>
   <form>
-    <fieldset>
+    <fieldset class="fieldset">
       <h2> Calcule a área do triângulo</h2>
     <label>
-      Número base
-    <input type="text" name="base" id="base">
+    <input type="text" name="base" id="base" placeholder="Número base">
     </label>
     <label>
-      Número altura
-    <input type="text" name="height" id="height">
+    <input type="text" name="height" id="height" placeholder="Número altura">
     </label>
 
     <button type="button" id="btn1">
       Calcular
     </button>
-    <h2 class="resultado"></h2>
+    <h3 class="resultado"></h3>
   </fieldset>
 
-  <fieldset>
+  <fieldset class="fieldset">
     <h2>
       Quantas palavras tem ?
     </h2>
     <label>
-      <textarea rows="5" cols="25" class="words"></textarea>
+      <textarea rows="5" cols="25" class="words" placeholder="Escreva aqui o que quiser e veja no final o quanto escreveu"></textarea>
     </label>
     <button type="button" id="btn2">
       Calcular
     </button>
-    <h2 id="resultado2"></h2>
+    <h3 id="resultado2"></h3>
   </fieldset>
-  <fieldset>
+  <fieldset class="fieldset">
     <h2> Placar de futebol</h2>
     <p>Preencha os campos de vitórias e empates e veja quantos pontos seu time fez</p>
     <p> Levando em consideração que cada vitória se soma 3 pontos e empate soma 1.</p>
     <label name="vitórias">
-      Vitórias
-      <input type="text" class="vitorias">
+      <input type="text" class="vitorias" placeholder="Vitórias">
     </label>
     <label name="empate">
-      Empates
-      <input type="text" class="empates">
+      <input type="text" class="empates" placeholder="empates">
     </label>
     <button type="button" id="btn3">
       Calcular
     </button>
-    <h2 id="resultado3"></h2>
+    <h3 id="resultado3"></h3>
   </fieldset>
   </form>
 

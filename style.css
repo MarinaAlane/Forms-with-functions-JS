@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: whitesmoke;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+}
+
+h2 {
+  display: flex;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 15px
+}
+
+span {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.fieldset {
+  height: 300px;
+  margin: 5%;
+}
+
+label {
+  display: flex;
+  margin-left: 40%;
+  padding: 1.5%;
+}
+
+button {
+  display: flex;
+  align-items: flex-end;
+  margin-left: 48% ;
+}
+
+p {
+  margin-left: 28%;
+  padding: 0.5%;
+}
+
+h3 {
+  color: rgb(200, 24, 24);
+  margin-left: 35%;
+  padding: 2%;
+  font-size: 30px;
+}
