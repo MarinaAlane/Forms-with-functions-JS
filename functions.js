@@ -17,14 +17,23 @@ const caclWords = () => {
       const text = document.querySelector('.words')
       const txt = text.value;
       const count = txt.split(' ').length;
-      document.getElementById('resultado2').innerHTML = count;
-      
+      document.getElementById('resultado2').innerHTML = `Você escreveu ${count} palavras`;
     })
 }
 
-
-
+const calcPlacar = () => {
+  const btn3 = document.getElementById('btn3');
+  btn3.addEventListener('click', function () {
+    const vitorias = document.querySelector('.vitorias');
+    const empate = document.querySelector('.empates');
+    const vitoriasValue = vitorias.value;
+    const empatesValue = empate.value;
+    const somaVitoria = vitoriasValue * 3 + empatesValue * 1;
+    document.getElementById('resultado3').innerHTML = `Seu time fez ${somaVitoria} pontos`
+  })
+ }
 window.onload = function () {
   calcArea();
   caclWords();
+  calcPlacar();
 }
