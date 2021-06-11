@@ -11,6 +11,20 @@ const calcArea = () => {
   })
 }
 
+const caclWords = () => {
+  const btn2 = document.getElementById('btn2');
+    btn2.addEventListener('click', function(){
+      const text = document.querySelector('.words')
+      const txt = text.value;
+      const count = txt.split(' ').length;
+      document.getElementById('resultado2').innerHTML = count;
+      
+    })
+}
+
+
+
 window.onload = function () {
   calcArea();
+  caclWords();
 }
